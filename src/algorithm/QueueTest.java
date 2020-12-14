@@ -13,21 +13,21 @@ import java.util.*;
 class QueueTest{
     public void operation(){
         PriorityQueue<String> queue=new PriorityQueue<String>();
-        queue.add("Ghani");
-        queue.add("Tanvir");
+        queue.add("Tanvir Nayeem");
+        queue.add("Ghani Rezwanul");
         queue.add("Sobuj");
-        queue.add("Tanni");
-        queue.add("Saju");
-        System.out.println("head:"+queue.element());
-        System.out.println("head:"+queue.peek());
-        System.out.println("iterating the queue elements:");
+        queue.add("Tania Tanni");
+        queue.add("Saju Rahman");
+        System.out.println("Head:"+queue.element());
+        System.out.println("Head:"+queue.peek());
+        System.out.println("Iterating the queue elements:");
         Iterator itr=queue.iterator();
         while(itr.hasNext()){
             System.out.println(itr.next());
         }
         queue.remove();
         queue.poll();
-        System.out.println("after removing two elements:");
+        System.out.println("After removing two elements:");
         Iterator<String> itr2=queue.iterator();
         while(itr2.hasNext()){
             System.out.println(itr2.next());
